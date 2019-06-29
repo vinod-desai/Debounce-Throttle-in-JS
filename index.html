@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TypeAhead App</title>
+    <style>
+      body {
+        margin: 10px;
+        background-color: aliceblue;
+      }
+      img {
+        width: 150px;
+        height: 150px;
+      }
+      .container {
+        width: 100%;
+        padding: 25px;
+        text-align: center;
+      }
+      .srchTxt {
+        width: 60%;
+        padding: 10px;
+      }
+      label {
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-family: "Times New Roman", Times, serif;
+      }
+      input:focus {
+        outline: none;
+        border: 1px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <label for="searchInput">Search Git</label>
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search GitHub user"
+        class="srchTxt"
+      />
+      <!-- <input type="button" value="Get User" id="getUserBtn" /> -->
+      <div id="searchResults"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
